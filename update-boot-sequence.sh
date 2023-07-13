@@ -9,7 +9,7 @@ echo "updating boot sequence with efi bootload id: ${bootloaderid}"
 
 # Reinstall / update kernel to latest version
 # This ensures that the kernel is present and up to date on the usb-key boot partition
-sudo pacman -Sy --noconfirm linux
+sudo pacman -S --noconfirm linux
 
 # Update initramfs
 mkinitcpio -p linux
